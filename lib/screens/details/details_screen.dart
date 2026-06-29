@@ -16,12 +16,11 @@ class DetailsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black, // Background must be solid black
+      backgroundColor: Colors.black,
       body: SingleChildScrollView(
         child: Column(
           children: [
-            // Stacked Layers Component for Details - blends into black content
-            DetailsHeader(
+             DetailsHeader(
               planetName: planet.name,
               planetTitle: planet.title,
             ),
@@ -31,7 +30,6 @@ class DetailsScreen extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // This part shows the selected planet as 3D model
                   Center(
                     child: SizedBox(
                       height: 350,
@@ -63,8 +61,7 @@ class DetailsScreen extends StatelessWidget {
 
                   const SizedBox(height: 20),
 
-                  // Planet Stats with underlined labels
-                  PlanetInfoItem(
+                   PlanetInfoItem(
                     title: 'Distance from Sun (km)',
                     value: '${planet.distance.toInt()}',
                   ),

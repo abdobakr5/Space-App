@@ -16,7 +16,6 @@ class DetailsHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        // 1. Image Background
         SizedBox(
           width: double.infinity,
           height: 250,
@@ -26,7 +25,6 @@ class DetailsHeader extends StatelessWidget {
           ),
         ),
 
-        // 2. Filled Gradient fading to pure black
         Container(
           height: 250,
           decoration: const BoxDecoration(
@@ -41,7 +39,6 @@ class DetailsHeader extends StatelessWidget {
           ),
         ),
 
-        // 3. Top Title (Planet Name) positioned Top Center
         Positioned(
           top: 50,
           left: 0,
@@ -58,7 +55,6 @@ class DetailsHeader extends StatelessWidget {
           ),
         ),
 
-        // 4. Back Button
         Positioned(
           top: 40,
           left: 16,
@@ -70,7 +66,6 @@ class DetailsHeader extends StatelessWidget {
           ),
         ),
 
-        // 5. Bottom title (Planet Title) positioned Bottom Left
         Positioned(
           bottom: 20,
           left: 24,

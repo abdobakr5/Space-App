@@ -54,7 +54,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
       backgroundColor: Colors.black, // Background must be solid black
       body: Column(
         children: [
-          // Stacked Layers Component for Explore
           const ExploreHeader(),
           
           Expanded(
@@ -62,7 +61,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
               padding: const EdgeInsets.symmetric(horizontal: 24),
               child: Column(
                 children: [
-                  // PageView Component which scrolls on Swipe
                   Expanded(
                     child: PageView.builder(
                       controller: _pageController,
@@ -82,7 +80,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
                     ),
                   ),
 
-                  // Buttons responsible for navigation
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -123,7 +120,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
 
                   const SizedBox(height: 20),
 
-                  // Elevated Button with Title + Planet Name
                   CustomButton(
                     text: 'Explore ${planet.name}',
                     onPressed: () {

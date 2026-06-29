@@ -8,7 +8,6 @@ class ExploreHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        // 1. Image Background
         SizedBox(
           width: double.infinity,
           height: 250,
@@ -18,7 +17,6 @@ class ExploreHeader extends StatelessWidget {
           ),
         ),
         
-        // 2. Filled Gradient on the top of the image - fading to pure black
         Container(
           height: 250,
           decoration: const BoxDecoration(
@@ -33,7 +31,6 @@ class ExploreHeader extends StatelessWidget {
           ),
         ),
 
-        // 3. Top Title (Explore) positioned Top Center
         const Positioned(
           top: 50,
           left: 0,
@@ -50,7 +47,6 @@ class ExploreHeader extends StatelessWidget {
           ),
         ),
 
-        // 4. Bottom Title positioned Bottom Left
         const Positioned(
           bottom: 20,
           left: 24,
