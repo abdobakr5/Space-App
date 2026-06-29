@@ -16,10 +16,11 @@ class DetailsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black, // Background must be solid black
       body: SingleChildScrollView(
         child: Column(
           children: [
-            // Stacked Layers Component for Details
+            // Stacked Layers Component for Details - blends into black content
             DetailsHeader(
               planetName: planet.name,
               planetTitle: planet.title,
@@ -62,7 +63,7 @@ class DetailsScreen extends StatelessWidget {
 
                   const SizedBox(height: 20),
 
-                  // Planet Stats
+                  // Planet Stats with underlined labels
                   PlanetInfoItem(
                     title: 'Distance from Sun (km)',
                     value: '${planet.distance.toInt()}',

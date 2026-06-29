@@ -41,6 +41,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
   Widget build(BuildContext context) {
     if (planets.isEmpty) {
       return const Scaffold(
+        backgroundColor: Colors.black,
         body: Center(
           child: CircularProgressIndicator(),
         ),
@@ -50,6 +51,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
     final planet = planets[currentIndex];
 
     return Scaffold(
+      backgroundColor: Colors.black, // Background must be solid black
       body: Column(
         children: [
           // Stacked Layers Component for Explore

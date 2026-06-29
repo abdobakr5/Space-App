@@ -26,17 +26,16 @@ class DetailsHeader extends StatelessWidget {
           ),
         ),
 
-        // 2. Filled Gradient
+        // 2. Filled Gradient fading to pure black
         Container(
           height: 250,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             gradient: LinearGradient(
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: [
-                Colors.black.withOpacity(0.4),
-                Colors.black.withOpacity(0.0),
-                Colors.black.withOpacity(0.8),
+                Colors.transparent,
+                Colors.black,
               ],
             ),
           ),
@@ -71,7 +70,7 @@ class DetailsHeader extends StatelessWidget {
           ),
         ),
 
-        // 5. Bottom title (Planet Title) positioned Center Left (of the bottom area)
+        // 5. Bottom title (Planet Title) positioned Bottom Left
         Positioned(
           bottom: 20,
           left: 24,

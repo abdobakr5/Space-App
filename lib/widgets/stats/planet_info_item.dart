@@ -13,24 +13,33 @@ class PlanetInfoItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 4),
-      child: RichText(
-        text: TextSpan(
-          style: const TextStyle(
-            color: Colors.white,
-            fontSize: 14,
+      padding: const EdgeInsets.symmetric(vertical: 8),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          RichText(
+            text: TextSpan(
+              style: const TextStyle(
+                color: Colors.white,
+                fontSize: 16,
+              ),
+              children: [
+                TextSpan(
+                  text: title,
+                  style: const TextStyle(
+                    fontWeight: FontWeight.bold,
+                    decoration: TextDecoration.underline,
+                  ),
+                ),
+                const TextSpan(text: ' : '),
+                TextSpan(
+                  text: value,
+                  style: const TextStyle(fontWeight: FontWeight.w400),
+                ),
+              ],
+            ),
           ),
-          children: [
-            TextSpan(
-              text: '$title : ',
-              style: const TextStyle(fontWeight: FontWeight.bold),
-            ),
-            TextSpan(
-              text: value,
-              style: const TextStyle(fontWeight: FontWeight.w400),
-            ),
-          ],
-        ),
+        ],
       ),
     );
   }

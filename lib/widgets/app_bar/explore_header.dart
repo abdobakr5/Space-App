@@ -18,17 +18,16 @@ class ExploreHeader extends StatelessWidget {
           ),
         ),
         
-        // 2. Filled Gradient on the top of the image
+        // 2. Filled Gradient on the top of the image - fading to pure black
         Container(
           height: 250,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             gradient: LinearGradient(
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: [
-                Colors.black.withOpacity(0.4),
-                Colors.black.withOpacity(0.0),
-                Colors.black.withOpacity(0.8),
+                Colors.transparent,
+                Colors.black,
               ],
             ),
           ),
