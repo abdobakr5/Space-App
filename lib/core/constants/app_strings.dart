@@ -5,7 +5,7 @@ abstract final class AppStrings {
   static const String explore = 'Explore';
 
   static const String exploreTheUniverse =
-      'Explore The Universe';
+      'Explore \nThe \nUniverse';
 
   static const String about = 'About';
 

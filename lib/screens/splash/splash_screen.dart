@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../core/constants/app_assets.dart';
 import '../../core/constants/app_strings.dart';
 import '../../widgets/buttons/custom_button.dart';
+import '../explore/explore_screen.dart';
 
 
 class SplashScreen extends StatelessWidget {
@@ -23,9 +24,9 @@ class SplashScreen extends StatelessWidget {
           Positioned(
             left: 30,
             top: MediaQuery.of(context).size.height * 0.45,
-            child: Text(
+            child: const Text(
               'Explore\nThe\nUniverse',
-              style: const TextStyle(
+              style: TextStyle(
                 fontFamily: 'Inter',
                 color: Colors.white,
                 fontSize: 48,
@@ -41,7 +42,14 @@ class SplashScreen extends StatelessWidget {
             bottom: 40,
             child: CustomButton(
               text: AppStrings.explore,
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const ExploreScreen(),
+                  ),
+                );
+              },
             ),
           ),
         ],

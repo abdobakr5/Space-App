@@ -27,5 +27,14 @@ flutter:
   uses-material-design: true
 
   assets:
+    - assets/images/splash/splash.png
+    - assets/images/header/header.png
+    - assets/json/planets.json
     - assets/images/
     - assets/models/
+    - assets/fonts/
+
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter_28pt-Black.ttf

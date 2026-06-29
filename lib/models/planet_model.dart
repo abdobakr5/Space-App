@@ -30,8 +30,8 @@ class PlanetModel {
   factory PlanetModel.fromJson(Map<String, dynamic> json) {
     return PlanetModel(
       name: json['name'],
-      image: json['image'],
-      model: json['model'],
+      image: 'assets/images/${json['image']}',
+      model: 'assets/models/${json['model']}',
       title: json['title'],
       about: json['about'],
       distance: (json['distance'] as num).toDouble(),
